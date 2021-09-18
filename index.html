@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="Skin.html">Skin Care</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="Hair.html">Hair Care</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="Makeup.html">Makeup</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          LAHARI PRATHAPAGIRI
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/skincare.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">I always give importance to keeping my skin healthy by eating the right food and staying hydrated at all times.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/natural.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">Natural skin care remedies may not deliver fast results, but always work better in the long run.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/skincare3.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle"> Skin care products like serums and toners help in lightening dark patches and marks.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/foundation-for-your-makeup-base.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">It is important to choose the right base products based on your skin type and complexion.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/brushes2.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">Blending is the key to make your makeup look flawless.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/redlipstick.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">Personally, I am a huge fan of bold lip shades.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/fashion.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">I like to explore fashion, while at the same time be economical with it.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Wardrobes.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">Every person must have wardrobe essentials, which can be worn and used in multiple ways.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/dhoti.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">Indo-westrn outfits are my absolute favourite.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/fitness.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">Being physically fit helps in keeping the mind fit as well.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/aesthetic-bedroom-plants.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">I am very much attracted towards aesthetically pleasing environments.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/mentalhealth.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">Surrounding yourself among positive and like-minded people plays a crucial role in metal peace.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
